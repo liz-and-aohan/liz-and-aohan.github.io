@@ -5,27 +5,6 @@
 <title>Liz &amp; Aohan</title>
 <meta name="viewport" content="initial-scale=1">
 <link rel="stylesheet" href="site.css" />
-<script>
-function easterEgg() {
-  let elt = document.getElementById("easter-egg");
-  elt.scrollIntoView();
-  elt.classList.add("hide");
-  setTimeout(() => {
-    elt.innerText = "Join in on the fun as you watch Liz and Aohan become one flesh.";
-    elt.classList.remove("hide");
-  }, 1000);
-}
-let keysPressed = new Set();
-document.addEventListener("keydown", (event) => {
-  keysPressed.add(event.key);
-  if (keysPressed.has("1") && keysPressed.has("f")) {
-    easterEgg();
-  }
-});
-document.addEventListener('keyup', (event) => {
-  keysPressed.delete(event.key);
-});
-</script>
 </head>
 
 <body class="page-borders-thick canvas-style-normal site-title">
@@ -34,7 +13,7 @@ document.addEventListener('keyup', (event) => {
       <div class="wrapper">
         <nav class="main-nav mobileNav">
           <ul>
-            <li class="page-collection active-link">
+            <li class="page-collection">
               <a href="/">Home</a>
             </li>
             <li class="page-collection">
@@ -46,7 +25,7 @@ document.addEventListener('keyup', (event) => {
             <!-- <li class="page-collection">
               <a href="/wedding-party.html">Wedding Party</a>
             </li> -->
-            <li class="page-collection">
+            <li class="page-collection active-link">
               <a href="/q-a.html">Q + A</a>
             </li>
           </ul>
@@ -58,12 +37,12 @@ document.addEventListener('keyup', (event) => {
     <header id="header" class="clear">
       <picture>
         <source media="(max-width: 640px)" srcset="Monogram_Only.png" />
-        <img class="banner" src="Monogram_Complete.png" />
+        <img class="banner" src="Monogram_Complete.png" title="Thanks to Ankine Sarkessian for creating this monogram!" />
       </picture>
       <div id="topNav">
         <nav class="main-nav" data-content-field="navigation">
           <ul>
-            <li class="page-collection active-link">
+            <li class="page-collection">
               <a href="/">Home</a>
             </li>
             <li class="page-collection">
@@ -75,7 +54,7 @@ document.addEventListener('keyup', (event) => {
             <!-- <li class="page-collection">
               <a href="/wedding-party.html">Wedding Party</a>
             </li> -->
-            <li class="page-collection">
+            <li class="page-collection active-link">
               <a href="/q-a.html">Q + A</a>
             </li>
           </ul>
@@ -89,39 +68,17 @@ document.addEventListener('keyup', (event) => {
     <section id="page" class="clear" role="main">
       <div class="sqs-layout sqs-grid-12 columns-12">
         <div class="row sqs-row">
-          <div class="col sqs-col-12 span-12">
-            <div class="sqs-block gallery-block sqs-block-gallery">
-              <div class="sqs-block-content">
-                <div class="sqs-gallery-container sqs-gallery-block-stacked clear">
-                  <div class="sqs-gallery">
-                    <div class="image-wrapper">
-                      <img src="home.png" class="engagement" alt="home.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
-              <div class="sqs-block-content">&nbsp;</div>
-            </div>
-          </div>
-        </div>
-        <div class="row sqs-row">
           <div class="col sqs-col-2 span-2">
             <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
               <div class="sqs-block-content">&nbsp;</div>
             </div>
           </div>
           <div class="col sqs-col-8 span-8">
-            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
-              <div class="sqs-block-content">
-                <hr />
-              </div>
-            </div>
             <div class="sqs-block html-block sqs-block-html">
               <div class="sqs-block-content">
                 <div class="sqs-html-content">
-                  <h1 class="text-align-center name">Liz Feng</h1><h2 class="text-align-center">&mdash;&nbsp;<em>and</em>&nbsp;&mdash;</h2><h1 class="text-align-center name">Aohan Dang</h1>
+                  <h3 class="text-align-center">What's the deal with the dress code?</h3>
+                  <p>It's black tie optional, but you are strongly encouraged to wear whatever you wore previously as a groomsman, bridesmaid, groomswoman, bridesman, etc. Please no white though ;)</p>
                 </div>
               </div>
             </div>
@@ -133,48 +90,11 @@ document.addEventListener('keyup', (event) => {
             <div class="sqs-block html-block sqs-block-html">
               <div class="sqs-block-content">
                 <div class="sqs-html-content">
-                  <h3 class="text-align-center">Come celebrate our marriage</h3>
+                  <h3 class="text-align-center">Why don't you have a wedding registry?</h3>
+                  <p>We have too much stuff in our small Beacon Hill condo and can't fit anything else in it at the moment. If you would like to give a gift, please have it be cash &ndash; weddings are expensive you know!</p>
                 </div>
               </div>
             </div>
-            <div class="sqs-block html-block sqs-block-html">
-              <div class="sqs-block-content">
-                <div class="sqs-html-content">
-                  <h3 class="text-align-center" style="text-transform:none;">
-                    Attire: Black Tie Optional or Previous Wedding Party Attire
-                  </h3>
-                  <h3 class="text-align-center">
-                    Saturday, April 27, 2024<br />
-                    4:00PM &ndash; 9:00PM
-                  </h3>
-                  <h3 class="text-align-center">
-                    Stonehurst, the Robert Treat Paine Estate<br />
-                    <span style="text-transform:none;">
-                      100 Robert Treat Paine Drive,<br />
-                      Waltham, MA 02452
-                    </span>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row sqs-row">
-          <div class="col sqs-col-12 span-12">
-            <div class="sqs-block">
-              <div class="sqs-block-content text-align-center" style="width: 600px; max-width: 90%; max-height: 90%; aspect-ratio: 4/3;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.86514181613!2d-71.23403792414844!3d42.38801927119036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39d2e0d4ab08f%3A0x242646f31dca195d!2sStonehurst%2C%20the%20Robert%20Treat%20Paine%20Estate!5e0!3m2!1sen!2sus!4v1684370258604!5m2!1sen!2sus" style="border:2px solid #8C8C8C; position: absolute; top: 0; left: 5%; bottom: 0; right: 5%; width: 90%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row sqs-row">
-          <div class="col sqs-col-2 span-2">
-            <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
-              <div class="sqs-block-content">&nbsp;</div>
-            </div>
-          </div>
-          <div class="col sqs-col-8 span-8">
             <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
               <div class="sqs-block-content">
                 <hr />
@@ -183,20 +103,24 @@ document.addEventListener('keyup', (event) => {
             <div class="sqs-block html-block sqs-block-html">
               <div class="sqs-block-content">
                 <div class="sqs-html-content">
-                  <h2 id="easter-egg" class="text-align-center">We hope to see you there!</h2>
-                  <script>
-                    let elt = document.getElementById("easter-egg");
-                    let touches = 0;
-                    elt.addEventListener("click", (event) => {
-                      if (event.detail == 3) easterEgg();
-                    });
-                    elt.addEventListener("touchend", (event) => {
-                      // for iOS
-                      touches += 1;
-                      setTimeout(() => touches = 0, 500);
-                      if (touches == 3) easterEgg();
-                    });
-                  </script>
+                  <h3 class="text-align-center">Is Liz planning to wear a white or red wedding dress?</h3>
+                  <p>Yes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h3 class="text-align-center">How do I RSVP?</h3>
+                  <p>
+                    The RSVP form will be available later once formal invitations are sent.
+                    <!--Fill in the form <a>here<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a>.-->
+                  </p>
                 </div>
               </div>
             </div>
