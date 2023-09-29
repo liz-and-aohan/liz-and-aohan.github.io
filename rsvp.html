@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Liz &amp; Aohan</title>
+<meta name="viewport" content="initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="site.css" />
+</head>
+
+<body>
+
+<h2 id="notReady" style="padding: 10px;"><noscript>The RSVP form is not ready yet. Check back later!</noscript></h2>
+<script>
+  let params = (new URL(document.location)).searchParams;
+  let name = params.get("name");
+  //let email = params.get("email");
+  let text = "";
+  if (name) {
+    text = `Hi ${name}, the`;
+  } else {
+    text = "The";
+  }
+  text += " RSVP form is not ready yet. Check back later!";
+  document.getElementById("notReady").innerText = text;
+</script>
+
+</body>
+</html>
