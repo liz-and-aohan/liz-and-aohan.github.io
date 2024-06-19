@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Liz &amp; Aohan</title>
+<meta name="viewport" content="initial-scale=1">
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="site.css" />
+<script>
+let numClicks = 0;
+let messages = [
+  "Oops, that's not Akshat!",
+  "Nice try, but that's not Akshat.",
+  "Wrong choice! Akshat isn't here.",
+  "Not quite! Akshat's not there.",
+  "Nope, that's not Akshat. Try again!",
+  "Sorry, that's not the person you're looking for. Try again!",
+  "Close, but not Akshat! Keep clicking to find him.",
+  "Not the one! Akshat is hiding somewhere else.",
+  "Not there! Akshat is elsewhere. Keep hunting!",
+  "Nope, that's not Akshat! Look elsewhere in the photo.",
+  "Not the right person! Akshat's elsewhere. Keep searching!",
+  "Not quite! Akshat's not in that spot. Keep clicking to find him.",
+  "Oops! That's not Akshat, try again!",
+  "Not quite! Akshat isn't in this spot; keep searching!",
+  "Hmm, not Akshat! Keep clicking to find him!",
+  "Nice try! But Akshat isn't here, keep looking!",
+  "Not quite! Akshat's hiding somewhere else, give it another shot!",
+  "Almost there! But Akshat's not in this click; try again!",
+  "Not Akshat! Keep clicking around to spot him!",
+  "You're warm, but that's not Akshat! Keep searching!",
+]
+
+function clickGroupPhoto() {
+  let text;
+  if (numClicks == 0) {
+    text = "That is not Akshat.";
+    numClicks++;
+  } else if (numClicks == 1) {
+    text = "That is not Akshat either.";
+    numClicks++;
+  } else {
+    text = messages[Math.floor(Math.random() * messages.length)];
+  }
+  alert(text);
+}
+</script>
+</head>
+
+<body class="page-borders-thick canvas-style-normal site-title">
+  <div id="canvas">
+    <header id="header" class="clear">
+      <picture>
+        <source media="(max-width: 640px)" srcset="Monogram_Only.png" />
+        <img class="banner" src="Monogram_Complete.png" />
+      </picture>
+    </header>
+
+    <div class="page-divider top-divider"></div>
+
+    <section id="page" class="clear" role="main">
+      <div class="sqs-layout sqs-grid-12 columns-12">
+        <div class="row sqs-row">
+          <div class="col sqs-col-2 span-2">
+            <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
+              <div class="sqs-block-content">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col sqs-col-8 span-8">
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Best Entrance</h3>
+                  <h3 class="text-align-center">Akshat</h1>
+                  <p class="text-align-center">Click on him in the group photo.<img src="Group.jpg" onclick="clickGroupPhoto();" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Best Dressed</h3>
+                  <h3 class="text-align-center">Malorie</h1>
+                  <p class="text-align-center">Monkeys<img src="Malorie-Superlative.jpg" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Most Creative Envelope</h3>
+                  <h3 class="text-align-center">Eric</h1>
+                  <p class="text-align-center">"Red Envelope (红包) for a Chinese Wedding - Reduce, Reuse, Recycle"<img src="Red_Envelope.png" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Farthest Distance Traveled</h3>
+                  <h3 class="text-align-center">党长慧、毛豫川、毛铭馨</h1>
+                  <p class="text-align-center">They traveled 7,900 miles (12,800 km) from China.<img src="Travel_Path.png" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Most Interesting Check</h3>
+                  <h3 class="text-align-center">Elizabeth</h1>
+                  <p class="text-align-center">
+                    We have never seen a check before with such large print. Also, we find it funny that it was addressed to Aohan and not Liz, who is her friend.
+                    <img src="Large_Check.png" style="border: 1px solid black" />
+                  </p>
+                  <p class="text-align-center">
+                    Compare this to a check with normal sized print.
+                    <img src="Normal_Check.png" style="border: 1px solid black" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Best Dancer</h3>
+                  <h3 class="text-align-center">John</h1>
+                  <p class="text-align-center" style="animation: seesaw 0.5s infinite ease-in-out">
+                    <a href="https://youtu.be/5gnZIwJJrEM?si=AKkxPKFWXdI81TNr&t=70" target="_blank">Gimme, gimme, shimmy, shimmy<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a>
+                    <img src="John-Superlative.jpg" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Great Minds Think Alike</h3>
+                  <h3 class="text-align-center">Chris+Melissa &amp; Brent</h1>
+                  <p class="text-align-center">Card twins!<img src="Card_Twins_1.png" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h1 class="text-align-center">Great Minds Think Alike (Part 2)</h3>
+                  <h3 class="text-align-center">Colin &amp; Nicholas</h1>
+                  <p class="text-align-center">Card twins! (part 2)<img src="Card_Twins_2.png" style="border: 1px solid black" /></p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <h2 class="text-align-center">See the professionally taken wedding photos
+                    <a href="https://drive.google.com/drive/folders/1L1FVl6nLpkC6oK5pKTSIf9uLI3wdMuxt?usp=sharing" target="_blank">here<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a>.
+                    The link will be deactivated at the end of August, so please download the photos you want before then.</h2>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+              <div class="sqs-block-content">
+                <hr />
+              </div>
+            </div>
+            <div class="sqs-block html-block sqs-block-html">
+              <div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <p class="text-align-center">(In case you were wondering, Akshat did show up, just after the group photo was taken.)</p>
+                </div>
+              </div>
+            </div>
+            <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
+              <div class="sqs-block-content">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col sqs-col-2 span-2">
+            <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
+              <div class="sqs-block-content">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
